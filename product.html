@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Roots Coffee</title>
+  <meta name="description" content="Specialty coffee from Brazil and Colombia. Whole bean or ground, 12 oz.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body class="page-product">
+  <div id="header"></div>
+
+  <main>
+    <section class="product" aria-labelledby="product-title">
+      <div class="product-gallery">
+        <div class="product-bag" id="product-bag"></div>
+        <div class="product-thumbs" role="tablist" aria-label="Bag view">
+          <button type="button" role="tab" aria-selected="true" data-view="Whole bean">Whole bean</button>
+          <button type="button" role="tab" aria-selected="false" data-view="Ground">Ground</button>
+        </div>
+      </div>
+
+      <div class="product-panel" id="buy">
+        <p class="product-origin" id="product-origin"></p>
+        <h1 id="product-title"></h1>
+        <p class="product-tagline" id="product-tagline"></p>
+        <ul class="product-notes" id="product-notes" aria-label="Tasting notes"></ul>
+
+        <form class="buy-form" id="buy-form">
+          <fieldset>
+            <legend>Grind</legend>
+            <label><input type="radio" name="grind" value="Whole bean" checked> Whole bean</label>
+            <label><input type="radio" name="grind" value="Ground"> Ground</label>
+          </fieldset>
+          <fieldset>
+            <legend>How often</legend>
+            <label><input type="radio" name="plan" value="once" checked> One time</label>
+            <label><input type="radio" name="plan" value="subscribe"> Subscribe and save 10%</label>
+          </fieldset>
+          <div class="frequency" id="frequency" hidden>
+            <label for="every">Deliver every</label>
+            <select id="every" name="every">
+              <option value="2">2 weeks</option>
+              <option value="3">3 weeks</option>
+              <option value="4" selected>4 weeks</option>
+            </select>
+          </div>
+          <div class="buy-row">
+            <div class="qty">
+              <button type="button" aria-label="One less bag" data-qty="-1">&minus;</button>
+              <output id="qty" aria-live="polite">1</output>
+              <button type="button" aria-label="One more bag" data-qty="1">+</button>
+            </div>
+            <button class="button button-gold buy-button" type="submit">Add to cart <span id="total"></span></button>
+          </div>
+          <p class="buy-note">12 oz / 340 g. Roasted to order, ships within 2 business days.</p>
+        </form>
+
+        <dl class="product-details" id="product-details"></dl>
+      </div>
+    </section>
+
+    <section class="story" aria-labelledby="story-title">
+      <div class="story-art" id="story-art"></div>
+      <div class="story-copy">
+        <h2 id="story-title">The story</h2>
+        <p id="story-text"></p>
+        <p class="story-fact" id="story-fact"></p>
+      </div>
+    </section>
+
+    <section class="pairs" aria-labelledby="pairs-title">
+      <h2 id="pairs-title">Pairs well with</h2>
+      <div class="pairs-grid" id="pairs"></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script type="module" src="/src/product.js"></script>
+</body>
+</html>

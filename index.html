@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Roots Coffee | Brazil and Colombia in one cup</title>
+  <meta name="description" content="Specialty coffee from Brazil and Colombia, in bags illustrated with the culture of each country. Whole bean or ground, one-time or by subscription.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body class="page-home">
+  <div id="header"></div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" id="hero-art"></div>
+      <div class="hero-copy">
+        <h1 id="hero-title">Brazil and Colombia, in one cup.</h1>
+        <p>Three coffees, each in a bag painted with the land it comes from.</p>
+        <a class="button button-gold" href="#coffee">Shop coffee</a>
+      </div>
+    </section>
+
+    <section class="feature feature-brazil" id="coffee" aria-labelledby="feature-brazil-title">
+      <div class="feature-bag" data-bag="brazil"></div>
+      <div class="feature-copy">
+        <p class="feature-origin">100% Brazil</p>
+        <h2 id="feature-brazil-title">Brazil</h2>
+        <p class="feature-text">Toucans, ipê trees and the Atlantic forest, on the bag and in the cup. Sweet and round, with milk chocolate and hazelnut.</p>
+        <a class="button" href="/product.html?c=brazil">See Brazil</a>
+      </div>
+    </section>
+
+    <section class="duo" id="subscribe" aria-label="Subscription and brewing">
+      <a class="duo-panel duo-subscribe" href="/product.html?c=brazil-colombia#buy">
+        <div class="duo-media" data-scene="brazil-colombia"></div>
+        <div class="duo-copy">
+          <h2>Subscribe and never run out</h2>
+          <p>Fresh bags every 2, 3 or 4 weeks. Skip or cancel any time.</p>
+          <span class="button button-gold">Start a subscription</span>
+        </div>
+      </a>
+      <a class="duo-panel duo-origins" href="#origins">
+        <div class="duo-media" data-scene="colombia"></div>
+        <div class="duo-copy">
+          <h2>Meet the origins</h2>
+          <p>The animals, trees and mountains on each bag, and why they are there.</p>
+          <span class="button">Explore origins</span>
+        </div>
+      </a>
+    </section>
+
+    <section class="feature feature-colombia" aria-labelledby="feature-colombia-title">
+      <div class="feature-copy">
+        <p class="feature-origin">100% Colombia</p>
+        <h2 id="feature-colombia-title">Colombia</h2>
+        <p class="feature-text">Wax palms and the Andes, on the bag and in the cup. Bright and clean, with caramel and red apple.</p>
+        <a class="button button-gold" href="/product.html?c=colombia">See Colombia</a>
+      </div>
+      <div class="feature-bag" data-bag="colombia"></div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-art" data-scene="brazil"></div>
+      <div class="about-copy">
+        <h2 id="about-title">Two countries we call home</h2>
+        <p>Two Roots brings coffee from Brazil and Colombia to the United States. We wanted bags you stop to look at: full of the birds, trees and colors of each country, with a story on the back worth reading while the water boils.</p>
+        <p>Buy a bag to try it, and stay for the culture behind it.</p>
+        <a class="button button-ink" href="/product.html?c=brazil-colombia">Try the signature blend</a>
+      </div>
+    </section>
+
+    <section class="explore" aria-labelledby="explore-title">
+      <div class="explore-list">
+        <h2 id="explore-title">Explore our coffee</h2>
+        <ul id="explore-items"></ul>
+      </div>
+      <div class="explore-media" data-scene="brazil-colombia"></div>
+    </section>
+
+    <section class="origins" id="origins" aria-labelledby="origins-title">
+      <h2 id="origins-title">Choose your origin</h2>
+      <div class="arches" id="arches"></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script type="module" src="/src/home.js"></script>
+</body>
+</html>
