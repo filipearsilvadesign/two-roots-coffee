@@ -21,3 +21,7 @@ npm run dev
 - `.claude/skills/`: skills de design (frontend-design, Mobbin) e de animação (GSAP).
 
 A loja final será na Shopify; este site é o protótipo navegável para aprovação do cliente.
+
+## Publicação
+
+A Vercel publica a `main` automaticamente a cada push. O GitHub Pages (`.github/workflows/pages.yml`) foi o primeiro endereço de testes.
