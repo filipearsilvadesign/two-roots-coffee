@@ -22,7 +22,7 @@ document.querySelector('#explore-items').innerHTML = products
   .map(
     (p) => `
     <li>
-      <a href="/product.html?c=${p.slug}">
+      <a href="product.html?c=${p.slug}">
         <span class="explore-swatch" style="--swatch:${p.color}"></span>
         <span class="explore-name">${p.name}</span>
         <span class="explore-notes">${p.notes.join(', ')}</span>
@@ -37,7 +37,7 @@ document.querySelector('#arches').innerHTML = archOrder
   .map((slug) => products.find((p) => p.slug === slug))
   .map(
     (p) => `
-    <a class="arch" href="/product.html?c=${p.slug}">
+    <a class="arch" href="product.html?c=${p.slug}">
       <div class="arch-media">${scene(p.slug)}</div>
       <h3>${p.name}</h3>
       <p>${p.origin}</p>

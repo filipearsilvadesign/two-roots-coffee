@@ -3,13 +3,13 @@ import { logo } from './art.js';
 export const header = (variant = '') => `
 <header class="site-header ${variant}">
   <nav class="nav nav-left" aria-label="Shop">
-    <a href="/#coffee">Coffee</a>
-    <a href="/#origins">Origins</a>
-    <a href="/#about">About us</a>
+    <a href="./#coffee">Coffee</a>
+    <a href="./#origins">Origins</a>
+    <a href="./#about">About us</a>
   </nav>
-  <a class="brand" href="/" aria-label="Two Roots Coffee, home">${logo}</a>
+  <a class="brand" href="./" aria-label="Two Roots Coffee, home">${logo}</a>
   <nav class="nav nav-right" aria-label="Account">
-    <a class="nav-subscribe" href="/#subscribe">Subscribe</a>
+    <a class="nav-subscribe" href="./#subscribe">Subscribe</a>
     <button class="cart-button" type="button" aria-label="Cart, 0 items">Cart <span class="cart-count">0</span></button>
   </nav>
 </header>`;
@@ -31,9 +31,9 @@ export const footer = `
     </form>
   </div>
   <div class="footer-links">
-    <div><h3>Shop</h3><a href="/product.html?c=brazil">Brazil</a><a href="/product.html?c=colombia">Colombia</a><a href="/product.html?c=brazil-colombia">Brazil &amp; Colombia</a><a href="/#subscribe">Subscription</a></div>
-    <div><h3>About</h3><a href="/#about">Our story</a><a href="/#origins">Origins</a></div>
-    <div><h3>Help</h3><a href="mailto:hello@tworootscoffee.com">hello@tworootscoffee.com</a><a href="/#subscribe">Manage subscription</a></div>
+    <div><h3>Shop</h3><a href="product.html?c=brazil">Brazil</a><a href="product.html?c=colombia">Colombia</a><a href="product.html?c=brazil-colombia">Brazil &amp; Colombia</a><a href="./#subscribe">Subscription</a></div>
+    <div><h3>About</h3><a href="./#about">Our story</a><a href="./#origins">Origins</a></div>
+    <div><h3>Help</h3><a href="mailto:hello@tworootscoffee.com">hello@tworootscoffee.com</a><a href="./#subscribe">Manage subscription</a></div>
   </div>
   <p class="footer-legal">Two Roots Coffee LLC, 300 Village Square Blvd, Honeoye Falls, NY 14472</p>
 </footer>`;
